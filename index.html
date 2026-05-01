@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Bonk Gabe</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="game-wrapper">
+    <section class="start-screen" id="startScreen">
+      <h1>bonk gabe</h1>
+      <p>he appears. you bonk. that is literally it.</p>
+
+      <button id="startButton">start</button>
+
+      <div class="leaderboard-box">
+        <h2>leaderboard</h2>
+        <ol id="startLeaderboardList">
+          <li>loading...</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="game-screen hidden" id="gameScreen">
+      <header class="game-header">
+        <p>score: <span id="score">0</span></p>
+        <p>time: <span id="timeLeft">15</span></p>
+      </header>
+
+      <div class="game-area" id="gameArea">
+        <img
+          src="assets/gabe-1.png"
+          alt="gabe"
+          class="gabe hidden"
+          id="gabe"
+          draggable="false"
+        />
+
+        <img
+          src="assets/bonk.png"
+          alt="bonk"
+          class="bonk-effect hidden"
+          id="bonkEffect"
+          draggable="false"
+        />
+
+        <div class="floating-text hidden" id="floatingText">bonk</div>
+      </div>
+    </section>
+
+    <section class="end-screen hidden" id="endScreen">
+      <h2>done.</h2>
+      <p>you bonked gabe</p>
+      <p class="final-score"><span id="finalScore">0</span> times</p>
+      <p class="result-message" id="resultMessage"></p>
+
+      <form class="score-form" id="scoreForm">
+        <label for="playerName">put your name on the board</label>
+        <div class="score-form-row">
+          <input
+            type="text"
+            id="playerName"
+            maxlength="18"
+            placeholder="your name"
+            autocomplete="off"
+            required
+          />
+          <button type="submit">submit</button>
+        </div>
+      </form>
+
+      <p class="save-message" id="saveMessage"></p>
+
+      <div class="leaderboard-box">
+        <h3>leaderboard</h3>
+        <ol id="endLeaderboardList">
+          <li>loading...</li>
+        </ol>
+      </div>
+
+      <button id="restartButton">again</button>
+    </section>
+  </main>
+
+  <audio id="bonkSound" src="assets/bonk-sound.mp3" preload="auto"></audio>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
