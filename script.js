@@ -67,14 +67,14 @@ const gabeImages = [
 
 const bonkTexts = [
   "bonk",
-  "bap",
-  "gabe no",
+  "chud",
+  "noooo",
   "caught",
-  "jail",
+  "bros bonking",
   "stop",
-  "oi",
+  "jit",
   "bruh",
-  "again?"
+  "holy bonk"
 ];
 
 const resultMessages = [
@@ -92,11 +92,11 @@ const resultMessages = [
   },
   {
     min: 25,
-    message: "violent. personal. concerning."
+    message: "chud level bonking"
   },
   {
     min: 35,
-    message: "gabe has entered witness protection."
+    message: "god tier bonks"
   }
 ];
 
